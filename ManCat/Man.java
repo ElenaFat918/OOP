@@ -1,16 +1,31 @@
+/**
+    * выделяем сущность "Чеолвек": говорим класс Man, для этой сущности определены поля - имя и поведение
+    **/
 public class Man {
     private String name;
     private String demeanour;
-
+    /**
+     * Конструктор отвечает за инициализацию имени и поведения
+     * @param name
+     * @param demeanour
+     */
     public Man(String name, String demeanour) {
         this.name = name;
         this.demeanour = demeanour;
-    }
-    // метод когда человек зовет кошку
+    } 
+    /**
+     * Метод инициализации голоса человека
+     * @param name - имя человека
+     * @param cat - объект кошка
+     */
     public void voice(String name, Cat cat) {
         System.out.println(name + " зовет кошку: " + cat.getName() + " кс-кс-кс");
     }
-    // человек зовет кошку
+    /**
+     * Метод, отвечающий за реакцию кошки на голос человека
+     * @param demeanour
+     * @param cat
+     */
     public void call(String demeanour, Cat cat) {
         if (demeanour == "доброжелательный") {
            

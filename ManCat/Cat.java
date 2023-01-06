@@ -11,12 +11,16 @@ public class Cat {
         this.name = name;
     }
     /**
-     * 
+     * Метод вывода в консоль отклика кошки
      * @param name
      */
     public void respond(String name){
         System.out.println("кошка " + name + " подошла и сказала мяу");
     }
+    /**
+     * Метод вывода в консоль отрицательного отклика кошки
+     * @param name
+     */
     public void respondNot(String name){
         System.out.println("кошка " + name + " убежала");
     }
