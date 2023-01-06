@@ -17,7 +17,7 @@ public class Man {
             voice(name, cat);
             cat.respond(cat.getName()); // кошка приходит
         } else {
-            // если человек не хозяин кошки
+            // если человек злой
             voice(name, cat);
             cat.respondNot(cat.getName()); // кошка не приходит
         }
